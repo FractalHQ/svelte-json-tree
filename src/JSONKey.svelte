@@ -14,7 +14,7 @@
   }
 </style>
 {#if showKey && key}
-  <label class:spaced={isParentExpanded} on:click>
-    <span>{key}{colon}</span>
+  <label for="key" class:spaced={isParentExpanded} on:click>
+    <span name="key">{key}{colon}</span>
   </label>
 {/if}

@@ -53,12 +53,12 @@
   }
 </style>
 <li class:indent={isParentExpanded}>
-  <label>
+  <label for="toggle">
     {#if expandable && isParentExpanded}
       <JSONArrow on:click={toggleExpand} {expanded} />
     {/if}
     <JSONKey {key} colon={context.colon} {isParentExpanded} {isParentArray} on:click={toggleExpand} />
-    <span on:click={toggleExpand}><span>{label}</span>{bracketOpen}</span>
+    <span name="toggle" on:click={toggleExpand}><span>{label}</span>{bracketOpen}</span>
   </label>
     {#if isParentExpanded}
       <ul class:collapse={!expanded} on:click={expand}>
