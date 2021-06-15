@@ -1,5 +1,7 @@
 # svelte-json-tree
 
+Standard fork with the aria console warnings removed.
+
 ![version](https://img.shields.io/npm/v/svelte-json-tree?style=flat-square) ![MIT License](https://img.shields.io/npm/l/svelte-json-tree?style=flat-square)
 
 ![svelte-json-tree](./images/screenshot.png)
